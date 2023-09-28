@@ -22,11 +22,11 @@ The Tech Learning App consists of lessons, quizzes, and a final congratulations 
 
 ## Lessons
 
-1. [Lesson 1: Understanding the Fundamental Concept of Algorithms](lesson1.html)
-2. [Lesson 2: Algorithm Analysis: Understanding the Efficiency of Algorithms](lesson2.html)
-3. [Lesson 3: Searching Algorithms](lesson3.html)
-4. [Lesson 4: Sorting Algorithms](lesson4.html)
-5. [Lesson 5: Recursion](lesson5.html)
+1. [Lesson 1: Understanding the Fundamental Concept of Algorithms](lesson2.html)
+2. [Lesson 2: Algorithm Analysis: Understanding the Efficiency of Algorithms](lesson3.html)
+3. [Lesson 3: Searching Algorithms](lesson4.html)
+4. [Lesson 4: Sorting Algorithms](lesson5.html)
+5. [Lesson 5: Recursion](lesson6.html)
 
 ## Quizzes
 
