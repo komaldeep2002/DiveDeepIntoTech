@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4: Sorting Algorithms</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Style for the menu bar */
+        .menu-bar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        /* Style for the menu links */
+        .menu-bar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change the color of links on hover */
+        .menu-bar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Style for the search bar container */
+        .search-container {
+            float: right;
+            margin-top: 10px;
+            margin-right: 20px;
+        }
+
+        /* Style for the search input field */
+        .search-input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Style for the search button */
+        .search-button {
+            background-color: #2979ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-bar">
+        <a href="lesson1.html">Home</a>
+        <a href="lesson2.html">Lesson 1</a>
+        <a href="lesson3.html">Lesson 2</a>
+        <a href="lesson4.html">Lesson 3</a>
+        <a href="lesson5.html">Lesson 4</a>
+        <a href="lesson6.html">Lesson 5</a>
+
+        <!-- Add more menu links as needed -->
+        
+        <!-- Search bar container -->
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button class="search-button">Search</button>
+        </div>
+    </div>
+    <div class="navbar">
+        <ul>
+            <li><a href="lesson1.html">Home</a></li>
+            <li><a href="lesson2.html">Lesson 1</a></li>
+            <li><a href="lesson3.html">Lesson 2</a></li>
+            <li><a href="lesson4.html">Lesson 3</a></li>
+            <li><a href="lesson5.html">Lesson 4</a></li>
+            <li><a href="lesson6.html">Lesson 5</a></li>
+            <li><a href="lesson7.html">Lesson 6</a></li>
+        </ul>
+    </div>
+    <div class="navbar-toggle">
+        <div class="icon">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+    
+    <div class="lesson-content">
+        <!-- Lesson content -->
+        <h1>Lesson 4: Sorting Algorithms</h1>
+
+        <h2>Sorting Algorithms</h2>
+        <p>Sorting algorithms are fundamental techniques in computer science used to arrange elements in a specific order, like ascending or descending. They are crucial for tasks like organizing data efficiently, optimizing database operations, and more. In this lesson, we will explore various sorting algorithms, each with its own characteristics and performance.</p>
+
+        <!-- Sorting Algorithm 1: Bubble Sort -->
+        <h3>1. Bubble Sort</h3>
+        <p>Bubble Sort is a simple sorting algorithm that repeatedly goes through the list, compares adjacent elements, and swaps them if they are in the wrong order. This process continues until the entire list is sorted. While easy to understand, it is not efficient for large datasets, as it has a time complexity of O(n^2).</p>
+        <p>Step 1: Start at the beginning of the list.
+            Step 2: Compare the first two elements. If the first element is larger than the second, swap them.
+            Step 3: Move to the next pair of elements and repeat the comparison and swapping process until you reach the end of the list.
+            Step 4: After one pass through the list, the largest element will have "bubbled up" to the end of the list.
+            Step 5: Repeat steps 1-4 for the remaining unsorted portion of the list (excluding the last element because it's already sorted).
+            Step 6: Continue these passes until no swaps are needed, indicating the list is sorted.</p>
+            <div class="container">
+            <div class="code-example">
+                <pre>
+                    <code>
+                        def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+
+arr = [64, 34, 25, 12, 22, 11, 90]
+bubble_sort(arr)
+print("Bubble Sorted Array:", arr)
+
+                    </code>
+                </pre>
+            </div>
+        </div>
+        <!-- Sorting Algorithm 2: Selection Sort -->
+        <h3>2. Selection Sort</h3>
+        <p>Selection Sort works by repeatedly finding the minimum (or maximum) element from the unsorted part of the array and moving it to the sorted portion. It also has a time complexity of O(n^2) in all cases.</p>
+        <p>Step 1: Start with the first element as the minimum.
+            Step 2: Scan the unsorted portion of the list to find the minimum element.
+            Step 3: Swap the minimum element found in step 2 with the first element.
+            Step 4: Move to the next element as the new minimum and repeat steps 2 and 3.
+            Step 5: Continue this process for each element until the list is sorted.</p>
+            <div class="container">
+                <div class="code-example">
+                    <pre>
+                        <code>
+                            def selection_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        min_idx = i
+        for j in range(i+1, n):
+            if arr[j] < arr[min_idx]:
+                min_idx = j
+        arr[i], arr[min_idx] = arr[min_idx], arr[i]
+
+arr = [64, 34, 25, 12, 22, 11, 90]
+selection_sort(arr)
+print("Selection Sorted Array:", arr)
+
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <!-- Sorting Algorithm 3: Insertion Sort -->
+        <h3>3. Insertion Sort</h3>
+        <p>Insertion Sort builds the final sorted array one element at a time. It takes an element from the input list and inserts it into its correct position within the sorted portion of the array. It performs well for small datasets but less efficiently for larger ones, also with a time complexity of O(n^2).</p>
+        <p>Step 1: Start with the second element (index 1) and consider it as the key.
+            Step 2: Compare the key with the element before it. If the key is smaller, move the larger element one position ahead to make space for the key.
+            Step 3: Repeat step 2 for the previous elements until you find the correct position for the key.
+            Step 4: Move to the next unsorted element (the element after the key) and repeat steps 2 and 3.
+            Step 5: Continue this process for each element until the list is sorted.</p>
+            <div class="container">
+                <div class="code-example">
+                    <pre>
+                        <code>
+                            def insertion_sort(arr):
+    for i in range(1, len(arr)):
+        key = arr[i]
+        j = i-1
+        while j >= 0 and key < arr[j]:
+            arr[j + 1] = arr[j]
+            j -= 1
+        arr[j + 1] = key
+
+arr = [64, 34, 25, 12, 22, 11, 90]
+insertion_sort(arr)
+print("Insertion Sorted Array:", arr)
+
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <!-- Sorting Algorithm 4: Merge Sort -->
+        <h3>4. Merge Sort</h3>
+        <p>Merge Sort is a "divide and conquer" algorithm that breaks down the array into smaller subarrays, sorts them, and then merges them back together. It consistently performs with a time complexity of O(n log n), but it requires additional memory for the merging step.</p>
+         <p>Step 1: Divide the unsorted list into n sublists, each containing one element (initially).
+            Step 2: Repeatedly merge sublists to produce new sorted sublists until there is only one sublist remaining.
+            Step 3: To merge two sublists, compare the elements from each sublist and select the smaller (or larger, depending on the desired order) element. Move the selected element to the new sorted list.
+            Step 4: Repeat step 3 until one of the sublists is exhausted.
+            Step 5: After one sublist is exhausted, move the remaining elements from the other sublist to the new sorted list.
+            Step 6: Continue merging sublists until there is only one sorted list remaining, which is the fully sorted list.</p>
+            <div class="container">
+                <div class="code-example">
+                    <pre>
+                        <code>
+                            function mergeSort(arr) {
+                                if (arr.length <= 1) return arr;
+                              
+                                const middle = Math.floor(arr.length / 2);
+                                const left = arr.slice(0, middle);
+                                const right = arr.slice(middle);
+                              
+                                const merge = (left, right) => {
+                                  let result = [];
+                                  let leftIndex = 0;
+                                  let rightIndex = 0;
+                              
+                                  while (leftIndex < left.length && rightIndex < right.length) {
+                                    if (left[leftIndex] < right[rightIndex]) {
+                                      result.push(left[leftIndex]);
+                                      leftIndex++;
+                                    } else {
+                                      result.push(right[rightIndex]);
+                                      rightIndex++;
+                                    }
+                                  }
+                              
+                                  return result.concat(left.slice(leftIndex), right.slice(rightIndex));
+                                };
+                              
+                                return merge(mergeSort(left), mergeSort(right));
+                              }
+                              
+                              const unsortedArray = [64, 25, 12, 22, 11];
+                              const sortedArray = mergeSort(unsortedArray);
+                              console.log("Merge Sorted Array:", sortedArray);
+                              
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <!-- Sorting Algorithm 5: Quick Sort -->
+        <h3>5. Quick Sort</h3>
+        <p>Quick Sort is another "divide and conquer" algorithm. It selects a pivot element and partitions the array into two sub-arrays, one with elements less than the pivot and the other with elements greater. Quick Sort is efficient on average with a time complexity of O(n log n) but can perform poorly in certain cases, degrading to O(n^2).</p>
+        <p>Step 1: Choose a pivot element from the list (typically the last element, but other strategies are also possible).
+            Step 2: Partition the list into two sublists: elements less than the pivot and elements greater than the pivot. The pivot is now in its sorted position.
+            Step 3: Recursively apply Quick Sort to the sublists created in step 2.
+            Step 4: Combine the sorted sublists and the pivot in their respective order to produce the fully sorted list.</p>
+            <div class="container">
+                <div class="code-example">
+                    <pre>
+                        <code>
+                            function quickSort(arr) {
+                                if (arr.length <= 1) return arr;
+                              
+                                const pivot = arr[arr.length - 1];
+                                const left = [];
+                                const right = [];
+                              
+                                for (let i = 0; i < arr.length - 1; i++) {
+                                  if (arr[i] < pivot) left.push(arr[i]);
+                                  else right.push(arr[i]);
+                                }
+                              
+                                return [...quickSort(left), pivot, ...quickSort(right)];
+                              }
+                              
+                              const unsortedArray = [64, 25, 12, 22, 11];
+                              const sortedArray = quickSort(unsortedArray);
+                              console.log("Quick Sorted Array:", sortedArray);
+                              
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <!-- Comparing Sorting Algorithms -->
+        <h2>Comparing Sorting Algorithms</h2>
+        <p>The choice of sorting algorithm depends on your specific requirements. Simple algorithms like Bubble, Selection, and Insertion Sort are easy to implement but not suitable for large datasets. Merge Sort is stable and consistently performs well but requires extra memory. Quick Sort is efficient on average but has occasional performance issues.</p>
+
+        <p>In practice, many programming languages provide built-in sorting functions optimized for both performance and stability.</p>
+    </div>
+    <div class="button-container">
+        <button id="previous-button">Previous</button>
+        <button id="quiz-button">Quiz</button>
+        <button id="next-button">Next</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

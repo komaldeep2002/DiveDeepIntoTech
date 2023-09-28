@@ -1,0 +1,293 @@
+/* Global styles */
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* Light gray background */
+    color: #000; /* Black text color */
+    text-align: left; /* Align text to the left */
+}
+
+
+/* Main page styles */
+.lesson-content {
+    font-weight: bold;
+    text-align: left; /* Align text to the left */
+    margin: 20px;
+    padding: 20px; /* Add padding to create a box around the content */
+    background-color: #fff; /* White background color */
+    color: #000; /* Black text color */
+    border: 1px solid #ddd; /* Add a 1px solid border around the content */
+    border-radius: 10px; /* Rounded corners for the content box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift effect */
+}
+
+/* Align headings to the left and use blue color */
+h1, h2, h3, h4 {
+    text-align: left;
+    color: #2979ff; /* Dark blue headings */
+}
+
+/* Styling for links */
+a {
+    color: #0073e6; /* Blue links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Button styles */
+.button-container {
+    text-align: center;
+    margin: 20px 0; /* Add some margin for spacing */
+}
+.lesson-content strong {
+    color: #2979ff;
+}
+
+
+.button-container button {
+    background-color: #2979ff; /* Dark blue button */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+.button-container button:hover {
+    background-color: #0057b3; /* Darker blue on hover */
+}
+
+/* Align text to the left */
+p, ul, li {
+    text-align: left;
+}
+
+/* Center align bullet points */
+ul {
+    list-style-position: inside;
+}
+
+/* navbar.css */
+/* Style for the navigation bar */
+.navbar {
+    width: 150px; /* Adjust the width as needed */
+    position: fixed;
+    top: 52px;
+    left: 0;
+    height: 100%;
+    background-color: #e2e1e1; /* Grey background color */
+    overflow: auto;
+    padding: 20px 0 0 20px; /* Add padding to create a box around the navbar */
+    border-right: 1px solid #ffffff; /* Add a 1px solid border on the right side of the navbar */
+}
+
+/* Style for the navigation links */
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 10px;
+    padding: 0;
+}
+
+.navbar a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #005eff; /* Blue text color */
+}
+
+.navbar a:hover {
+    background-color: #3f4041; /* Darker blue on hover */
+}
+
+/* Style for the lesson content */
+.lesson-content {
+    margin-left: 220px; /* Adjust the margin to create space for the navbar */
+    padding: 20px; /* Add padding to separate content from navbar */
+}
+
+/* Quiz page styles */
+.quiz-content {
+    text-align: left; /* Align quiz content to the left */
+    margin: 20px;
+    background-color: #fff; /* White background color for quiz content */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for the quiz content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift effect */
+}
+
+/* Quiz form styles */
+#quiz-form {
+    margin-bottom: 20px;
+}
+
+/* Quiz question styles */
+p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Quiz answer styles */
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Quiz feedback styles */
+#quiz-feedback {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Quiz button styles */
+button[type="submit"], #quiz-back-button {
+    background-color: #2979ff; /* Blue button background color */
+    color: #fff; /* White button text color */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover, #quiz-back-button:hover {
+    background-color: #0057b3; /* Darker blue on hover */
+}
+
+/* Correct and incorrect answer styles */
+.correct-answer {
+    color: green;
+}
+
+.incorrect-answer {
+    color: red;
+}
+
+/* ... (your existing CSS) ...
+
+/* Style for the navigation menu toggle button */
+.navbar-toggle {
+    position: fixed;
+    top: 20px; /* Adjust the vertical position as needed */
+    left: 20px; /* Adjust the horizontal position as needed */
+    cursor: pointer;
+    z-index: 9999; /* Ensure it's above other content */
+}
+
+
+/* Style for the navigation menu (initially hidden) */
+.navbar {
+    /* ... (your existing navbar styles) ... */
+    display: none; /* Initially hide the navbar */
+}
+
+/* Style for the opened navigation menu */
+.navbar.open {
+    display: block;
+} 
+
+/* Updated CSS for the navigation menu toggle button */
+/* Updated CSS for the navigation menu toggle button */
+.navbar-toggle .icon .dot {
+    width: 6px;
+    height: 6px;
+    background-color: #005eff; /* Blue color for the dots */
+    border-radius: 50%; /* Make the dots circular */
+    margin: 4px 0; /* Adjust spacing between dots */
+    transition: 0.4s;
+}
+
+/* Position the dots slightly below the top-left corner */
+.navbar-toggle .icon .dot:nth-child(1) {
+    position: absolute;
+    top: 31px;
+    left: 0;
+}
+
+.navbar-toggle .icon .dot:nth-child(2) {
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+
+.navbar-toggle .icon .dot:nth-child(3) {
+    position: absolute;
+    top: 49px;
+    left: 0;
+}
+
+/* Style for the close button (cross icon) */
+.navbar-toggle.active .icon .dot:nth-child(1) {
+    transform: rotate(45deg) translate(2px, 2px);
+}
+
+.navbar-toggle.active .icon .dot:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggle.active .icon .dot:nth-child(3) {
+    transform: rotate(-45deg) translate(2px, -2px);
+}
+
+
+/* Style for the close button (cross icon) */
+.navbar-toggle.active .icon .dot:nth-child(1) {
+    transform: rotate(45deg) translate(2px, 2px);
+}
+
+.navbar-toggle.active .icon .dot:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggle.active .icon .dot:nth-child(3) {
+    transform: rotate(-45deg) translate(2px, -2px);
+}
+
+/* CSS for the image */
+.lesson-content img {
+    display: block;
+    margin: 0 auto; /* Center the image */
+    max-width: 80%; /* Ensure the image doesn't exceed its container width */
+    height: 250px; /* Maintain aspect ratio */
+    margin-top: 20px; /* Adjust the top margin as needed */
+}
+.container {
+    text-align: center; /* Center-align child elements */
+}
+
+.code-example {
+    background-color: #a8c7fd;
+    border: 1px solid #464646;
+    border-radius: 5px;
+    width:max-content;
+    padding: 20px;
+    margin: 30px;
+}
+
+/* Code styles */
+pre {
+    white-space: pre-wrap; /* Allow line breaks */
+    overflow-x: auto; /* Add horizontal scrollbar if needed */
+}
+
+code {
+    font-family: Monaco, monospace;
+    font-size: 14px;
+    color: #333;
+}

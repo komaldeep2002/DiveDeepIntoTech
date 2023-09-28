@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3 Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add your custom CSS styles here, if needed */
+        .correct-answer {
+            color: green;
+        }
+
+        .incorrect-answer {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-content">
+        <!-- Quiz content for Lesson 1 -->
+        <h1>Lesson 3 Quiz</h1>
+        <form id="quiz-form">
+            <p>1. What is the primary purpose of searching algorithms in computer science?
+            </p>
+            <label>
+                <input type="radio" name="question1" value="A"> A. Sorting data
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="B"> B. Finding specific elements in a dataset
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="C"> C. Creating user interfaces
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="D"> D. Debugging code
+            </label><br>
+
+            <p>2. Which searching algorithm is also known as sequential search?
+            </p>
+            <label>
+                <input type="radio" name="question2" value="A"> A. Binary search
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="B"> B. Linear search
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="C"> C. Hash-based search
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="D"> D. Interpolation search
+            </label><br>
+
+            <!-- Add more questions with radio buttons as needed -->
+            <!-- Question 3 -->
+            <p>3. When is binary search most effective?</p>
+            <label>
+                <input type="radio" name="question3" value="A"> A. When dealing with unsorted data
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="B"> B. When the data size is small
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="C"> C. When the data is stored in a linked list
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="D"> D. When the data is sorted
+            </label><br>
+
+            <!-- Question 4 -->
+            <p>4. Which of the following is NOT a characteristic considered when choosing a search algorithm?</p>
+            <label>
+                <input type="radio" name="question4" value="A"> A. Data size
+            </label><br>
+            <label>
+                <input type="radio" name="question4" value="B"> B. Data sortedness
+            </label><br>
+            <label>
+                <input type="radio" name="question4" value="C"> C. Data type
+            </label><br>
+            <label>
+                <input type="radio" name="question4" value="D"> D. Update frequency
+            </label><br>
+
+            <!-- Question 5 -->
+            <p>5. What is the time complexity of binary search in the worst-case scenario?</p>
+            <label>
+                <input type="radio" name="question5" value="A"> A. O(n)
+            </label><br>
+            <label>
+                <input type="radio" name="question5" value="B"> B. O(log n)
+            </label><br>
+            <label>
+                <input type="radio" name="question5" value="C"> C. O(1)
+            </label><br>
+            <label>
+                <input type="radio" name="question5" value="D"> D. O(n^2)
+            </label><br>
+
+            <!-- Question 6 -->
+            <p>6. What is a potential disadvantage of linear search compared to binary search?</p>
+            <label>
+                <input type="radio" name="question6" value="A"> A. Slower execution for small datasets
+            </label><br>
+            <label>
+                <input type="radio" name="question6" value="B"> B. Inability to search sorted data
+            </label><br>
+            <label>
+                <input type="radio" name="question6" value="C"> C. Higher memory usage
+            </label><br>
+            <label>
+                <input type="radio" name="question6" value="D"> D. Lack of simplicity
+            </label><br>
+
+            <!-- Question 7 -->
+            <p>7. Which searching algorithm is known for its application in fast retrieval of data from large datasets?</p>
+            <label>
+                <input type="radio" name="question7" value="A"> A. Hash-based search
+            </label><br>
+            <label>
+                <input type="radio" name="question7" value="B"> B. Exponential search
+            </label><br>
+            <label>
+                <input type="radio" name="question7" value="C"> C. Linear search
+            </label><br>
+            <label>
+                <input type="radio" name="question7" value="D"> D. Binary search
+            </label><br>
+
+            <!-- Question 8 -->
+            <p>8. In which field might you find applications of searching algorithms like information retrieval and spell-checking?</p>
+            <label>
+                <input type="radio" name="question8" value="A"> A. Medicine
+            </label><br>
+            <label>
+                <input type="radio" name="question8" value="B"> B. Environmental science
+            </label><br>
+            <label>
+                <input type="radio" name="question8" value="C"> C. Computer science
+            </label><br>
+            <label>
+                <input type="radio" name="question8" value="D"> D. Linguistics
+            </label><br>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="quiz-feedback"></p>
+        <button id="quiz-back-button">Back to Lesson</button>
+    </div>
+    <script src="quiz3.js"></script>
+</body>
+</html>

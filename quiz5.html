@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5 Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add your custom CSS styles here, if needed */
+        .correct-answer {
+            color: green;
+        }
+
+        .incorrect-answer {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-content">
+        <!-- Quiz content for Lesson 1 -->
+        <h1>Lesson 5 Quiz</h1>
+        <form id="quiz-form">
+            <p>1. What is the primary purpose of recursion in computer science and mathematics?</p>
+            <label>
+                <input type="radio" name="question1" value="A"> A. Generating random numbers
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="B"> B. Arranging elements in ascending order
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="C"> C. Solving problems that can be divided into smaller, similar subproblems
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="D"> D. Performing complex mathematical calculations
+            </label><br>
+
+            <p>2. In recursion, what is the base case used for?</p>
+            <label>
+                <input type="radio" name="question2" value="A"> A. To make the function more complex
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="B"> B. To define when the recursion stops
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="C"> C. To increase the time complexity
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="D"> D. To reduce memory usage
+            </label><br>
+
+            <!-- Add more questions with radio buttons as needed -->
+            <!-- Question 3 -->
+            <p>3. What is the key characteristic of a recursive function?</p>
+            <label>
+                <input type="radio" name="question3" value="A"> A. It must have no base case
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="B"> B. It can only call other functions
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="C"> C. It calls itself with a modified input
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="D"> D. It can only be used for sorting
+            </label><br>
+
+            <!-- Question 4 -->
+            <p>4. When should recursion stop in a well-designed recursive function?</p>
+            <label>
+                <input type="radio" name="question4" value="A"> A. It should never stop
+            </label><br>
+            <label>
+                <input type="radio" name="question4" value="B"> B. When it reaches a base case
+            </label><br>
+            <label>
+                <input type="radio" name="question4" value="C"> C. After a fixed number of recursive calls
+            </label><br>
+            <label>
+                <input type="radio" name="question4" value="D"> D. When it encounters a large dataset
+            </label><br>
+
+            <!-- Question 5 -->
+            <p>5. Which characteristic defines problems suitable for solving with recursion?</p>
+            <label>
+                <input type="radio" name="question5" value="A"> A. Problems that cannot be divided into smaller parts
+            </label><br>
+            <label>
+                <input type="radio" name="question5" value="B"> B. Problems that have a single solution
+            </label><br>
+            <label>
+                <input type="radio" name="question5" value="C"> C. Problems that do not require a base case
+            </label><br>
+            <label>
+                <input type="radio" name="question5" value="D"> D. Problems that can be divided into smaller, similar subproblems
+            </label><br>
+
+            <!-- Question 6 -->
+            <p>6. What is the primary role of the recursive case in a recursive function?</p>
+            <label>
+                <input type="radio" name="question6" value="A"> A. To make the function simpler
+            </label><br>
+            <label>
+                <input type="radio" name="question6" value="B"> B. To add more base cases
+            </label><br>
+            <label>
+                <input type="radio" name="question6" value="C"> C. To call other functions
+            </label><br>
+            <label>
+                <input type="radio" name="question6" value="D"> D. To reduce the problem's size toward the base case
+            </label><br>
+
+            <!-- Question 7 -->
+            <p>7. Which example demonstrates a base case for a recursive function?</p>
+            <label>
+                <input type="radio" name="question7" value="A"> A. Calculating the sum of all elements in an array
+            </label><br>
+            <label>
+                <input type="radio" name="question7" value="B"> B. Printing the numbers from 1 to n
+            </label><br>
+            <label>
+                <input type="radio" name="question7" value="C"> C. Finding the factorial of a number, where n equals 0
+            </label><br>
+            <label>
+                <input type="radio" name="question7" value="D"> D. Sorting an array in ascending order
+            </label><br>
+
+            <!-- Question 8 -->
+            <p>8. What does recursion provide for solving problems?</p>
+            <label>
+                <input type="radio" name="question8" value="A"> A. A complex and confusing approach
+            </label><br>
+            <label>
+                <input type="radio" name="question8" value="B"> B. A simple and straightforward solution
+            </label><br>
+            <label>
+                <input type="radio" name="question8" value="C"> C. A way to avoid base cases
+            </label><br>
+            <label>
+                <input type="radio" name="question8" value="D"> D. A powerful method for breaking down problems into smaller subproblems
+            </label><br>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="quiz-feedback"></p>
+        <button id="quiz-back-button">Back to Lesson</button>
+    </div>
+    <script src="quiz5.js"></script>
+</body>
+</html>

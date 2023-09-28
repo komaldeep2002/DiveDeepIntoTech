@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4 Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add your custom CSS styles here, if needed */
+        .correct-answer {
+            color: green;
+        }
+
+        .incorrect-answer {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-content">
+        <!-- Quiz content for Lesson 1 -->
+        <h1>Lesson 4 Quiz</h1>
+        <form id="quiz-form">
+            <p>1. What is the primary purpose of sorting algorithms in computer science?</p>
+            <label>
+                <input type="radio" name="question1" value="A"> A. Generating random data
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="B"> B. Arranging elements in a specific order
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="C"> C. Calculating mathematical equations
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="D"> D. Encrypting data
+            </label><br>
+
+            <p>2. Which of the following sorting algorithms has the highest time complexity for large datasets?</p>
+            <label>
+                <input type="radio" name="question2" value="A"> A. Bubble Sort
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="B"> B. Selection Sort
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="C"> C. Merge Sort
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="D"> D. Quick Sort
+            </label><br>
+
+            <!-- Add more questions with radio buttons as needed -->
+            <!-- Question 3 -->
+            <p>3. In which sorting algorithm does the sorting process occur by repeatedly finding the minimum (or maximum) element and moving it to the sorted portion?</p>
+            <label>
+                <input type="radio" name="question3" value="A"> A. Bubble Sort
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="B"> B. Selection Sort
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="C"> C. Insertion Sort
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="D"> D. Merge Sort
+            </label><br>
+
+            <!-- Question 4 -->
+            <p>4. Which sorting algorithm consistently performs with a time complexity of O(n log n)?</p>
+            <label>
+                <input type="radio" name="question4" value="A"> A. Bubble Sort
+            </label><br>
+            <label>
+                <input type="radio" name="question4" value="B"> B. Selection Sort
+            </label><br>
+            <label>
+                <input type="radio" name="question4" value="C"> C. Merge Sort
+            </label><br>
+            <label>
+                <input type="radio" name="question4" value="D"> D. Quick Sort
+            </label><br>
+
+            <!-- Question 5 -->
+            <p>5. Which sorting algorithm is known for being straightforward but not efficient for large datasets?</p>
+            <label>
+                <input type="radio" name="question5" value="A"> A. Merge Sort
+            </label><br>
+            <label>
+                <input type="radio" name="question5" value="B"> B. Quick Sort
+            </label><br>
+            <label>
+                <input type="radio" name="question5" value="C"> C. Insertion Sort
+            </label><br>
+            <label>
+                <input type="radio" name="question5" value="D"> D. Bubble Sort
+            </label><br>
+
+            <!-- Question 6 -->
+            <p>6. In which sorting algorithm is a pivot element selected, and the array is divided into two sub-arrays based on elements' values compared to the pivot?</p>
+            <label>
+                <input type="radio" name="question6" value="A"> A. Insertion Sort
+            </label><br>
+            <label>
+                <input type="radio" name="question6" value="B"> B. Selection Sort
+            </label><br>
+            <label>
+                <input type="radio" name="question6" value="C"> C. Quick Sort
+            </label><br>
+            <label>
+                <input type="radio" name="question6" value="D"> D. Merge Sort
+            </label><br>
+
+            <!-- Question 7 -->
+            <p>7. Which sorting algorithm can perform poorly in certain cases and degrade to O(n^2) time complexity?</p>
+            <label>
+                <input type="radio" name="question7" value="A"> A. Merge Sort
+            </label><br>
+            <label>
+                <input type="radio" name="question7" value="B"> B. Bubble Sort
+            </label><br>
+            <label>
+                <input type="radio" name="question7" value="C"> C. Quick Sort
+            </label><br>
+            <label>
+                <input type="radio" name="question7" value="D"> D. Insertion Sort
+            </label><br>
+
+            <!-- Question 8 -->
+            <p>8. What determines the choice of sorting algorithm for a specific task?</p>
+            <label>
+                <input type="radio" name="question8" value="A"> A. The number of elements in the dataset
+            </label><br>
+            <label>
+                <input type="radio" name="question8" value="B"> B. The programming language used
+            </label><br>
+            <label>
+                <input type="radio" name="question8" value="C"> C. Personal preference
+            </label><br>
+            <label>
+                <input type="radio" name="question8" value="D"> D. Specific requirements of the task
+            </label><br>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="quiz-feedback"></p>
+        <button id="quiz-back-button">Back to Lesson</button>
+    </div>
+    <script src="quiz4.js"></script>
+</body>
+</html>

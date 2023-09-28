@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 6: Completed</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Center content vertically and horizontally */
+        }
+
+        .thumbs-up-page {
+            text-align: center;
+        }
+
+        .center-content {
+            text-align: center;
+        }
+
+        .big-thumbs-up-icon {
+            font-size: 10em; /* Increased font size for a bigger icon */
+        }
+
+        .back-to-lessons-button {
+            background-color: #2979ff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: auto; /* Push button to the bottom */
+            border-radius: 5px;
+        }
+
+        .back-to-lessons-button:hover {
+            background-color: #0057b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="thumbs-up-page">
+        <div class="center-content">
+            <h1>Congratulations!</h1>
+            <p>You have successfully completed This course.</p>
+            <span class="big-thumbs-up-icon">&#x1F44D;</span>
+        </div>
+        <button class="back-to-lessons-button" onclick="goToLesson1()">Back to Lessons</button>
+    </div>
+
+    <script>
+        function goToLesson1() {
+            // Redirect to Lesson 1
+            window.location.href = "lesson1.html";
+        }
+    </script>
+</body>
+</html>

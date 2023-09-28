@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2 Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add your custom CSS styles here, if needed */
+        .correct-answer {
+            color: green;
+        }
+
+        .incorrect-answer {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-content">
+        <!-- Quiz content for Lesson 1 -->
+        <h1>Lesson 2 Quiz</h1>
+        <form id="quiz-form">
+            <p>1. What is the primary focus of algorithm analysis?</p>
+            <label>
+                <input type="radio" name="question1" value="A"> A. Debugging code
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="B"> B. Enhancing user interfaces
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="C"> C. Evaluating algorithm efficiency
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="D"> D. Writing documentation
+            </label><br>
+
+            <p>2. Which notation is commonly used to express the worst-case time complexity of an algorithm?</p>
+            <label>
+                <input type="radio" name="question2" value="A"> A. O(n)
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="B"> B. O(log n)
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="C"> C. O(1)
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="D"> D. O(n^2)
+            </label><br>
+
+            <!-- Add more questions with radio buttons as needed -->
+            <!-- Question 3 -->
+            <p>3. Why is algorithm efficiency important in computer science?
+            </p>
+            <label>
+                <input type="radio" name="question3" value="A"> A. It makes programs look more attractive.
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="B"> B. It directly impacts program speed and resource consumption.
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="C"> C. It simplifies code writing.
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="D"> D. It reduces the need for testing.
+            </label><br>
+
+            <!-- Question 4 -->
+            <p>4. What is the primary purpose of asymptotic analysis?</p>
+            <label>
+                <input type="radio" name="question4" value="A"> A. Debugging code
+            </label><br>
+            <label>
+                <input type="radio" name="question4" value="B"> B. Measuring execution time
+            </label><br>
+            <label>
+                <input type="radio" name="question4" value="C"> C. Evaluating algorithm efficiency as input size increases
+            </label><br>
+            <label>
+                <input type="radio" name="question4" value="D"> D. Writing documentation
+            </label><br>
+
+            <!-- Question 5 -->
+            <p>5. Which Big O notation represents a constant-time algorithm?
+            </p>
+            <label>
+                <input type="radio" name="question5" value="A"> A. O(n)
+            </label><br>
+            <label>
+                <input type="radio" name="question5" value="B"> B. O(log n)
+            </label><br>
+            <label>
+                <input type="radio" name="question5" value="C"> C. O(1)
+            </label><br>
+            <label>
+                <input type="radio" name="question5" value="D"> D. O(n^2)
+            </label><br>
+
+            <!-- Question 6 -->
+            <p>6. When analyzing and comparing algorithms, what is essential to consider?
+            </p>
+            <label>
+                <input type="radio" name="question6" value="A"> A. The color of the code.
+            </label><br>
+            <label>
+                <input type="radio" name="question6" value="B"> B. The number of comments in the code.
+            </label><br>
+            <label>
+                <input type="radio" name="question6" value="C"> C. The time complexity and real-world performance.
+            </label><br>
+            <label>
+                <input type="radio" name="question6" value="D"> D. The length of variable names.
+            </label><br>
+
+            <!-- Question 7 -->
+            <p>7. In algorithm analysis, what does the "worst-case" scenario refer to?</p>
+            <label>
+                <input type="radio" name="question7" value="A"> A. The least efficient case
+            </label><br>
+            <label>
+                <input type="radio" name="question7" value="B"> B. The most efficient case
+            </label><br>
+            <label>
+                <input type="radio" name="question7" value="C"> C. An unrealistic scenario
+            </label><br>
+            <label>
+                <input type="radio" name="question7" value="D"> D. The average scenario
+            </label><br>
+
+            <!-- Question 8 -->
+            <p>8. What is the goal of analyzing and comparing algorithms?</p>
+            <label>
+                <input type="radio" name="question8" value="A"> A. To make code look more elegant.
+            </label><br>
+            <label>
+                <input type="radio" name="question8" value="B"> B. To increase the complexity of algorithms.
+            </label><br>
+            <label>
+                <input type="radio" name="question8" value="C"> C. To select the most efficient algorithm for a specific problem.
+            </label><br>
+            <label>
+                <input type="radio" name="question8" value="D"> D. To eliminate the need for code documentation.
+            </label><br>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="quiz-feedback"></p>
+        <button id="quiz-back-button">Back to Lesson</button>
+    </div>
+    <script src="quiz2.js"></script>
+</body>
+</html>

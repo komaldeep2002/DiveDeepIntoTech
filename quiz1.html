@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1 Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add your custom CSS styles here, if needed */
+        .correct-answer {
+            color: green;
+        }
+
+        .incorrect-answer {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-content">
+        <!-- Quiz content for Lesson 1 -->
+        <h1>Lesson 1 Quiz</h1>
+        <form id="quiz-form">
+            <p>1. What is an algorithm in the context of computer science?</p>
+            <label>
+                <input type="radio" name="question1" value="A"> A. A computer's hardware components
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="B"> B. A step-by-step procedure for solving problems
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="C"> C. A programming language
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="D"> D. A software application
+            </label><br>
+
+            <p>2. How are algorithms similar to recipes?</p>
+            <label>
+                <input type="radio" name="question2" value="A"> A. They are both written in natural language
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="B"> B. They are both used in cooking
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="C"> C. They both involve a sequence of steps to achieve a specific goal
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="D"> D. They both require creativity
+            </label><br>
+
+            <!-- Add more questions with radio buttons as needed -->
+            <!-- Question 3 -->
+            <p>3. What is the significance of algorithms in computer science?</p>
+            <label>
+                <input type="radio" name="question3" value="A"> A. They are used to create computer hardware
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="B"> B. They help convert abstract problems into executable instructions
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="C"> C. They are only important for complex scientific calculations
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="D"> D. They are used to design user interfaces
+            </label><br>
+
+            <!-- Question 4 -->
+            <p>4. Why is efficiency important in algorithms?</p>
+            <label>
+                <input type="radio" name="question4" value="A"> A. Efficiency makes algorithms more complex
+            </label><br>
+            <label>
+                <input type="radio" name="question4" value="B"> B. It helps optimize resource utilization, such as time and memory
+            </label><br>
+            <label>
+                <input type="radio" name="question4" value="C"> C. Efficiency is not important in computer science
+            </label><br>
+            <label>
+                <input type="radio" name="question4" value="D"> D. It makes algorithms harder to understand
+            </label><br>
+
+            <!-- Question 5 -->
+            <p>5. What does it mean when we say algorithms are deterministic?</p>
+            <label>
+                <input type="radio" name="question5" value="A"> A. They always produce a random output
+            </label><br>
+            <label>
+                <input type="radio" name="question5" value="B"> B. They produce the same output for the same input every time
+            </label><br>
+            <label>
+                <input type="radio" name="question5" value="C"> C. They are unpredictable and chaotic
+            </label><br>
+            <label>
+                <input type="radio" name="question5" value="D"> D. They can only be used for simple tasks
+            </label><br>
+
+            <!-- Question 6 -->
+            <p>6. Which characteristic of algorithms ensures that they must eventually stop executing?</p>
+            <label>
+                <input type="radio" name="question6" value="A"> A. Input
+            </label><br>
+            <label>
+                <input type="radio" name="question6" value="B"> B. Output
+            </label><br>
+            <label>
+                <input type="radio" name="question6" value="C"> C. Finiteness
+            </label><br>
+            <label>
+                <input type="radio" name="question6" value="D"> D. Determinism
+            </label><br>
+
+            <!-- Question 7 -->
+            <p>7. In what way do algorithms promote reusability in software development?</p>
+            <label>
+                <input type="radio" name="question7" value="A"> A. They can be used in any programming language
+            </label><br>
+            <label>
+                <input type="radio" name="question7" value="B"> B. They can only be used for specific, one-time tasks
+            </label><br>
+            <label>
+                <input type="radio" name="question7" value="C"> C. Once you have an algorithm for a problem, you can apply it to similar problems
+            </label><br>
+            <label>
+                <input type="radio" name="question7" value="D"> D. They are limited to small-scale applications
+            </label><br>
+
+            <!-- Question 8 -->
+            <p>8. Give an example of a real-world application that relies on algorithms.</p>
+            <label>
+                <input type="radio" name="question8" value="A"> A. Video games
+            </label><br>
+            <label>
+                <input type="radio" name="question8" value="B"> B. Social media platforms
+            </label><br>
+            <label>
+                <input type="radio" name="question8" value="C"> C. Microwave ovens
+            </label><br>
+            <label>
+                <input type="radio" name="question8" value="D"> D. All of the above (Video games, social media platforms, and microwave ovens rely on algorithms for various functionalities)
+            </label><br>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="quiz-feedback"></p>
+        <button id="quiz-back-button">Back to Lesson</button>
+    </div>
+    <script src="quiz1.js"></script>
+</body>
+</html>

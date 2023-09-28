@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5: Recursion</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Style for the menu bar */
+        .menu-bar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        /* Style for the menu links */
+        .menu-bar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change the color of links on hover */
+        .menu-bar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Style for the search bar container */
+        .search-container {
+            float: right;
+            margin-top: 10px;
+            margin-right: 20px;
+        }
+
+        /* Style for the search input field */
+        .search-input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Style for the search button */
+        .search-button {
+            background-color: #2979ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-bar">
+        <a href="lesson1.html">Home</a>
+        <a href="lesson2.html">Lesson 1</a>
+        <a href="lesson3.html">Lesson 2</a>
+        <a href="lesson4.html">Lesson 3</a>
+        <a href="lesson5.html">Lesson 4</a>
+        <a href="lesson6.html">Lesson 5</a>
+        
+        <!-- Add more menu links as needed -->
+        
+        <!-- Search bar container -->
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button class="search-button">Search</button>
+        </div>
+    </div>
+    <div class="navbar">
+        <ul>
+            <li><a href="lesson1.html">Home</a></li>
+            <li><a href="lesson2.html">Lesson 1</a></li>
+            <li><a href="lesson3.html">Lesson 2</a></li>
+            <li><a href="lesson4.html">Lesson 3</a></li>
+            <li><a href="lesson5.html">Lesson 4</a></li>
+            <li><a href="lesson6.html">Lesson 5</a></li>
+            <li><a href="lesson7.html">Lesson 6</a></li>
+        </ul>
+    </div>
+    <div class="navbar-toggle">
+        <div class="icon">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+    
+    <div class="lesson-content">
+        <!-- Lesson content -->
+        <h1>Lesson 5: Recursion</h1>
+
+        <h2>Recursion</h2>
+        <p>Recursion is a powerful technique in computer science and mathematics that involves a function calling itself to solve a problem. It is particularly useful when dealing with problems that can be broken down into smaller, similar subproblems. In Lesson 5, we will explore the concept of recursion, recursive functions, and their application in problem-solving.</p>
+
+        <h3>Understanding Recursion</h3>
+        <p>Recursion relies on the concept of self-reference. In a recursive function, the function calls itself with a modified input, gradually reducing the problem's size until it reaches a base case. The base case defines when the recursion stops. Without a base case, the function would continue indefinitely, causing a stack overflow.</p>
+
+        <h3>Recursive Functions</h3>
+        <p>A recursive function consists of two primary components:</p>
+        <ul>
+            <li><strong>Base Case:</strong> This is the condition where the recursion stops. It determines when the function returns a result instead of making further recursive calls.</li>
+            <li><strong>Recursive Case:</strong> This is the part of the function where it calls itself with a modified input. This step progressively reduces the problem's size toward the base case.</li>
+        </ul>
+
+        <h3>Solving Problems with Recursion</h3>
+        <p>Recursion is typically employed to tackle problems with the following characteristics:</p>
+        <ul>
+            <li><strong>Divide and Conquer:</strong> The problem can be divided into smaller, similar subproblems.</li>
+            <li><strong>Reduction:</strong> Solving a subproblem should contribute to solving the larger problem.</li>
+            <li><strong>Base Case:</strong> There must be a condition that signals when the recursion should stop.</li>
+        </ul>
+
+        <h3>Example: Factorial Calculation</h3>
+        <p>A classic example of recursion is calculating the factorial of a number. The base case is when the number equals 0, at which point the function returns 1. For any other value of the number, the function calculates the factorial by multiplying it by the factorial of (number - 1).</p>
+
+        <h3>Example: Fibonacci Sequence</h3>
+        <p>Another common example is generating the Fibonacci sequence using recursion. The base cases here are when the input is 0 or 1. For any other input, the function computes the Fibonacci value by adding the results of two recursive calls with input (n - 1) and (n - 2).</p>
+
+        <p>Recursion provides an elegant and powerful way to solve various problems by breaking them down into simpler, self-referential subproblems. It can be a key tool in algorithm design and problem-solving strategies.</p>
+    </div>
+    <div class="button-container">
+        <button id="previous-button">Previous</button>
+        <button id="quiz-button">Quiz</button>        
+        <button id="next-button" type="button" class="btn btn-primary" data-toggle="modal" data-target="#doneModal">Done</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
