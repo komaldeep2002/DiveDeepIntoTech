@@ -1,7 +1,7 @@
 document.getElementById("quiz-back-button").addEventListener("click", function () {
     console.log("Back button clicked");
     // Redirect back to Lesson 5
-    window.location.href = "lesson5.html";
+    window.location.href = "lesson6.html";
 });
 
 document.getElementById("quiz-form").addEventListener("submit", function (e) {

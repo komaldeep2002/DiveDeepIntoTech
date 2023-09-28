@@ -1,6 +1,6 @@
 document.getElementById("quiz-back-button").addEventListener("click", function () {
     // Redirect back to Lesson 1
-    window.location.href = "lesson4.html";
+    window.location.href = "lesson5.html";
 });
 
 document.getElementById("quiz-form").addEventListener("submit", function (e) {
